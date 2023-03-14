@@ -31,7 +31,6 @@
 #welcome p {
   color: white;
   font-size: 1.5rem;
-  margin-top: 10rem;
 }
 
 #latest-posts {
@@ -41,6 +40,9 @@
   width: 60rem;
   margin: -6rem auto 2rem auto;
   box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-items: center;
 }
 
 #latest-posts h2 {
