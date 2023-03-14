@@ -14,14 +14,17 @@
   <header>
     <img src="{% static "blog/images/img_me.jpg" %}" alt="Soham-The Author of the Blog" />
     <h2>SOHAM'S BLOGS!!</h2>
-    <p>Hi, I am Soham and I love blogging about the world</p>
+    <!-- <p>Hi, I am Soham and I love blogging about the world</p> -->
   </header>
 </section>
 
 <section id="latest-posts">
   <h2>My Latest Thoughts</h2>
   <ul>
-    {% include 'blog/includes/post.html' %}
+    {% for post in posts %}
+      {% include 'blog/includes/post.html' %}    
+    {% endfor %}
+    
   </ul>
 </section>
 
